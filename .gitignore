@@ -1,0 +1,18 @@
+# Keil / ARM build outputs
+*.o
+*.d
+*.crf
+*.lst
+*.map
+*.axf
+*.hex
+*.sct
+*.lnp
+*.tra
+*.htm
+*.plg
+*.dep
+*.bak
+
+# IDE/user-specific files
+# Keep .uvproj/.uvopt only if your institute requires the Keil project settings.

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="white"/>
+<text x="750" y="50" text-anchor="middle" font-family="Arial" font-size="34" font-weight="bold">Software-Derived Wiring Reference</text>
+<text x="750" y="82" text-anchor="middle" font-family="Arial" font-size="18">Verify against the final laboratory schematic before submission.</text>
+
+<rect x="40" y="120" width="440" height="720" rx="18" fill="#f4f8ff" stroke="#3567a8" stroke-width="3"/>
+<text x="260" y="165" text-anchor="middle" font-family="Arial" font-size="28" font-weight="bold">MAIN NODE — LPC2129</text>
+<g font-family="Arial" font-size="20">
+<text x="70" y="220">DS18B20 DQ</text><text x="390" y="220" text-anchor="end" font-weight="bold">P0.20</text>
+<text x="70" y="265">LCD D0–D7</text><text x="390" y="265" text-anchor="end" font-weight="bold">P0.8–P0.15</text>
+<text x="70" y="310">LCD RS / RW / EN</text><text x="390" y="310" text-anchor="end" font-weight="bold">P0.16 / P0.17 / P0.18</text>
+<text x="70" y="355">Mode Switch / EINT0</text><text x="390" y="355" text-anchor="end" font-weight="bold">P0.1</text>
+<text x="70" y="400">Left SW / EINT1</text><text x="390" y="400" text-anchor="end" font-weight="bold">P0.3</text>
+<text x="70" y="445">Right SW / EINT2</text><text x="390" y="445" text-anchor="end" font-weight="bold">P0.7</text>
+<text x="70" y="490">Buzzer</text><text x="390" y="490" text-anchor="end" font-weight="bold">P0.19</text>
+<text x="70" y="535">CAN1 RX</text><text x="390" y="535" text-anchor="end" font-weight="bold">P0.25</text>
+<text x="70" y="580">CAN1 TX</text><text x="390" y="580" text-anchor="end" font-weight="bold">Dedicated pin</text>
+</g>
+<text x="260" y="650" text-anchor="middle" font-family="Arial" font-size="18">External 4.7 kΩ pull-up on DS18B20 DQ</text>
+<text x="260" y="685" text-anchor="middle" font-family="Arial" font-size="18">CAN transceiver: MCP2551 or equivalent</text>
+
+<rect x="530" y="120" width="440" height="720" rx="18" fill="#fff8ef" stroke="#b36b00" stroke-width="3"/>
+<text x="750" y="165" text-anchor="middle" font-family="Arial" font-size="28" font-weight="bold">FUEL NODE — LPC2129</text>
+<g font-family="Arial" font-size="20">
+<text x="560" y="235">Fuel Gauge Wiper</text><text x="880" y="235" text-anchor="end" font-weight="bold">P0.28 / AD0.1 / CH1</text>
+<text x="560" y="285">CAN1 RX</text><text x="880" y="285" text-anchor="end" font-weight="bold">P0.25</text>
+<text x="560" y="335">CAN1 TX</text><text x="880" y="335" text-anchor="end" font-weight="bold">Dedicated pin</text>
+</g>
+<rect x="610" y="410" width="280" height="100" rx="15" fill="white" stroke="#555"/>
+<text x="750" y="450" text-anchor="middle" font-family="Arial" font-size="21">ADC reading</text>
+<text x="750" y="480" text-anchor="middle" font-family="Arial" font-size="21">→ Fuel % → CAN 0x100</text>
+
+<rect x="1020" y="120" width="440" height="720" rx="18" fill="#f7f1ff" stroke="#7048a8" stroke-width="3"/>
+<text x="1240" y="165" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">INDICATOR / REVERSE</text>
+<text x="1240" y="200" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">NODE — LPC2129</text>
+<g font-family="Arial" font-size="20">
+<text x="1050" y="250">Indicator LEDs</text><text x="1370" y="250" text-anchor="end" font-weight="bold">P0.0–P0.7</text>
+<text x="1050" y="295">STOP LED</text><text x="1370" y="295" text-anchor="end" font-weight="bold">P0.19</text>
+<text x="1050" y="340">Buzzer</text><text x="1370" y="340" text-anchor="end" font-weight="bold">P0.20</text>
+<text x="1050" y="385">Ultrasonic TRIG</text><text x="1370" y="385" text-anchor="end" font-weight="bold">P0.16</text>
+<text x="1050" y="430">Ultrasonic ECHO</text><text x="1370" y="430" text-anchor="end" font-weight="bold">P0.17</text>
+<text x="1050" y="475">CAN1 RX</text><text x="1370" y="475" text-anchor="end" font-weight="bold">P0.25</text>
+<text x="1050" y="520">CAN1 TX</text><text x="1370" y="520" text-anchor="end" font-weight="bold">Dedicated pin</text>
+</g>
+<text x="1240" y="610" text-anchor="middle" font-family="Arial" font-size="18">Forward → indicators</text>
+<text x="1240" y="645" text-anchor="middle" font-family="Arial" font-size="18">Reverse → ultrasonic + buzzer + STOP LED</text>
+
+<text x="750" y="900" text-anchor="middle" font-family="Arial" font-size="18">The institute abstract names HC-SR05; the supplied driver is hcsr04.c. Confirm the physical sensor model and final wiring.</text>
+</svg>
